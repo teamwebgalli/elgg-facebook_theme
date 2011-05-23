@@ -175,6 +175,14 @@ function facebook_theme_pagesetup_handler() {
 				'link_class' => 'elgg-button elgg-button-action',
 				'contexts' => array('profile'),
 			));
+
+			elgg_register_menu_item('title', array(
+				'name' => 'editprofileicon',
+				'href' => "/profile/$user->username/editicon",
+				'text' => elgg_echo('profile:editicon'),
+				'link_class' => 'elgg-button elgg-button-action',
+				'contexts' => array('profile'),
+			));
 		}
 		
 		if (elgg_is_active_plugin('groups')) {
